@@ -1,4 +1,5 @@
 
+
 # vue-getting-started
 A short step by step guide to getting a basic vue project up and running.
 
@@ -20,9 +21,41 @@ It includes the use of vuex, vue-resource, uikit and sass.
 ## Steps to use uikit.
 This project uses the .vue template style as *lang=sass scoped*. 
 Include general style settings and pulling in of uikit sass in app.vue.
-1. Change the style section of the App.vue to.
+1. Change the style section of the App.vue to:
 ```scss
 <style lang="scss">
+  body {
+    background-color: lightblue;
+  }
+</style>
+```
+2. Change the style tag in the Hello.vue to:
+```scss
+<style lang="scss" scoped>
+```
+3. Add below the existing import statements the following to main.js
+```js
+import 'jquery'
+import 'uikit'
+```
+3. Change the App.vue file with the following:
+```html
+<template>
+  <section class="uk-section">
+    <div class="uk-container">
+      <img src="./assets/logo.png">
+      <router-view></router-view>
+    </div>
+  </section>
+</template>
+```
+```css
+<style lang="scss">
+  @import '../node_modules/uikit/src/scss/variables-theme.scss';
+  @import '../node_modules/uikit/src/scss/mixins-theme.scss';
+  // Add overrides here...
+  @import '../node_modules/uikit/src/scss/uikit-theme.scss';
+
   body {
     background-color: lightblue;
   }
