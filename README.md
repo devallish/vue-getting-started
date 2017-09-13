@@ -1,5 +1,6 @@
 
 
+
 # vue-getting-started
 A short step by step guide to getting a basic vue project up and running.
 
@@ -61,3 +62,4 @@ import 'uikit'
   }
 </style>
 ```
+4. Run the *npm run dev* and you should see the changes.
