@@ -1,3 +1,4 @@
+
 # vue-getting-started
 A short step by step guide to getting a basic vue project up and running.
 
@@ -14,3 +15,16 @@ It includes the use of vuex, vue-resource, uikit and sass.
 4. Run *npm install babel-preset-env --save-dev*
 5. Run *npm install sass-loader node-sass --save-dev*
 6. Run *npm install uikit jquery --save*
+7. Run *npm run dev*. This should launch default app on http://localhost:8080.
+
+## Steps to use uikit.
+This project uses the .vue template style as *lang=sass scoped*. 
+Include general style settings and pulling in of uikit sass in app.vue.
+1. Change the style section of the App.vue to.
+```scss
+<style lang="scss">
+  body {
+    background-color: lightblue;
+  }
+</style>
+```
